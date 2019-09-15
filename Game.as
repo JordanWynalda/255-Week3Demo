@@ -8,7 +8,7 @@
 	public class Game extends MovieClip {
 		
 		
-		private var health:Number = 100;
+		private var health:Number = 150;
 		private var score:Number = 0;
 		private var xAtFullHealth:Number;
 		
@@ -39,7 +39,7 @@
 			updateAnims();
 			
 			
-			health--; // hurt the player
+			//health--; // hurt the player
 			var p:Number = (health / 150); // get health as a percent
 			if(p < 0) p = 0; // clamp min to 0
 			if(p > 1) p = 1; // clamp max to 1
